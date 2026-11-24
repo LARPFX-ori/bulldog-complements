@@ -1,0 +1,19 @@
+[package]
+name = "particulae_legales"
+description = "Bulldog Complements — Particulae Legales deterministic procedural particle emitters and atmospheric FX OpenFX suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "particulae_legales"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true

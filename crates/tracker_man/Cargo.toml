@@ -1,0 +1,19 @@
+[package]
+name = "tracker_man"
+description = "Bulldog Complements — TrackerMan planar tracking, corner pin, stabilization, and rotoscopy OpenFX suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "tracker_man"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true

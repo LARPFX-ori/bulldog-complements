@@ -1,0 +1,19 @@
+[package]
+name = "transitions_3d"
+description = "Bulldog Complements — 3D Transitions spatial and geometric OpenFX transition suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "transitions_3d"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,19 @@
+[package]
+name = "bulldog_caeruleus_nebulosus_ofx"
+description = "OpenFX cdylib bundle entrypoint for Bulldog Caeruleus Nebulosus"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "bulldog_caeruleus_nebulosus_ofx"
+crate-type = ["cdylib"]
+
+[dependencies]
+bulldog_ofx = { workspace = true }
+caeruleus_nebulosus = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,7 @@
+# Clippy configuration for Bulldog Complements.
+# Production code strictly forbids panic/unwrap/expect/indexing macros (AGENTS.md §0).
+# Tests are allowed to use them for concise assertions.
+allow-unwrap-in-tests = true
+allow-expect-in-tests = true
+allow-panic-in-tests = true
+allow-indexing-slicing-in-tests = true

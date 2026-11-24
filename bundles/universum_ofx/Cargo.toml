@@ -1,0 +1,19 @@
+[package]
+name = "bulldog_universum_ofx"
+description = "OpenFX cdylib bundle entrypoint for Bulldog Universum"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "bulldog_universum_ofx"
+crate-type = ["cdylib"]
+
+[dependencies]
+bulldog_ofx = { workspace = true }
+universum = { workspace = true }
+
+[lints]
+workspace = true

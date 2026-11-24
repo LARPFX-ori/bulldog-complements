@@ -1,0 +1,14 @@
+[package]
+name = "bulldog_core"
+description = "Core DSP, color, pixel buffer, determinism, and rendering engine for Bulldog Complements"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+rayon = { workspace = true }
+
+[lints]
+workspace = true

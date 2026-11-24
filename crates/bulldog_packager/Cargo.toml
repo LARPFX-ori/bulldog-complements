@@ -1,0 +1,24 @@
+[package]
+name = "bulldog_packager"
+description = "OpenFX bundle packager, exported symbol verifier, descriptor validator, and SPDX license auditor for Bulldog Complements"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+continuus = { workspace = true }
+sapphirus = { workspace = true }
+dulcia_nitentia = { workspace = true }
+caeruleus_nebulosus = { workspace = true }
+transitions_3d = { workspace = true }
+tracker_man = { workspace = true }
+glass_brokers = { workspace = true }
+universum = { workspace = true }
+particulae_legales = { workspace = true }
+
+[lints]
+workspace = true

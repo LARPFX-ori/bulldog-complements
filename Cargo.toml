@@ -1,0 +1,65 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/bulldog_core",
+    "crates/bulldog_ofx",
+    "crates/bulldog_packager",
+    "crates/continuus",
+    "crates/sapphirus",
+    "crates/dulcia_nitentia",
+    "crates/caeruleus_nebulosus",
+    "crates/transitions_3d",
+    "crates/tracker_man",
+    "crates/glass_brokers",
+    "crates/universum",
+    "crates/particulae_legales",
+    "bundles/continuus_ofx",
+    "bundles/sapphirus_ofx",
+    "bundles/dulcia_nitentia_ofx",
+    "bundles/caeruleus_nebulosus_ofx",
+    "bundles/transitions_3d_ofx",
+    "bundles/tracker_man_ofx",
+    "bundles/glass_brokers_ofx",
+    "bundles/universum_ofx",
+    "bundles/particulae_legales_ofx",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+authors = ["Bulldog Complements Contributors"]
+
+[workspace.dependencies]
+rayon = "1.10"
+bulldog_core = { path = "crates/bulldog_core" }
+bulldog_ofx = { path = "crates/bulldog_ofx" }
+continuus = { path = "crates/continuus" }
+sapphirus = { path = "crates/sapphirus" }
+dulcia_nitentia = { path = "crates/dulcia_nitentia" }
+caeruleus_nebulosus = { path = "crates/caeruleus_nebulosus" }
+transitions_3d = { path = "crates/transitions_3d" }
+tracker_man = { path = "crates/tracker_man" }
+glass_brokers = { path = "crates/glass_brokers" }
+universum = { path = "crates/universum" }
+particulae_legales = { path = "crates/particulae_legales" }
+
+[workspace.lints.rust]
+missing_debug_implementations = "warn"
+unreachable_pub = "warn"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+unimplemented = "deny"
+todo = "deny"
+unreachable = "deny"
+indexing_slicing = "deny"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "unwind"
+strip = "symbols"

@@ -1,0 +1,19 @@
+[package]
+name = "caeruleus_nebulosus"
+description = "Bulldog Complements — Caeruleus Nebulosus production utilities, mattes, framing, and essential video tools OpenFX suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "caeruleus_nebulosus"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true

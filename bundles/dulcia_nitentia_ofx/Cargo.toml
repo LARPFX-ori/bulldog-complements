@@ -1,0 +1,19 @@
+[package]
+name = "bulldog_dulcia_nitentia_ofx"
+description = "OpenFX cdylib bundle entrypoint for Bulldog Dulcia Nitentia"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "bulldog_dulcia_nitentia_ofx"
+crate-type = ["cdylib"]
+
+[dependencies]
+bulldog_ofx = { workspace = true }
+dulcia_nitentia = { workspace = true }
+
+[lints]
+workspace = true

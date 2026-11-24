@@ -1,0 +1,19 @@
+[package]
+name = "continuus"
+description = "Bulldog Complements — Continuus general-purpose finishing, blur, stylize, and compositing OpenFX suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "continuus"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true

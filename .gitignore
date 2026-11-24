@@ -1,0 +1,36 @@
+# Rust build outputs
+/target/
+**/*.rs.bk
+*.pdb
+
+# Packaged OpenFX bundles
+/dist/
+*.ofx.bundle/
+
+# Local test fixtures, scratch notebooks, and logs (AGENTS.md)
+/fixtures/
+/plan/
+/logs/
+
+# Pre-existing local brainstorming directories & scratch docs at repo root
+# (anchored to root so crates/* are always tracked)
+/continuus/
+/sapphirus/
+/caeruleus nebulosus/
+/trackerMan/
+/3d transitions/
+/glass brokers/
+/universum/
+/particulae legales/
+/dulcia nitentia/
+/trash_agents_doc.gdoc
+/*.gdoc
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

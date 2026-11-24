@@ -1,0 +1,19 @@
+[package]
+name = "dulcia_nitentia"
+description = "Bulldog Complements — Dulcia Nitentia color grading, film look, vignette, and organic grain OpenFX suite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "dulcia_nitentia"
+crate-type = ["rlib"]
+
+[dependencies]
+bulldog_core = { workspace = true }
+bulldog_ofx = { workspace = true }
+
+[lints]
+workspace = true
